@@ -13,7 +13,7 @@
     else if(current > initial){
          var profit =(current - initial) * quantity;
         var profitPercentage = (profit / initial) * 100;
-        outputBox.innerHTML="The profit is" + profit + "and the percentage is"+ profitPercentage +"%"; 
+        outputBox.innerHTML="The profit is " + profit + " and the percentage is "+ profitPercentage +"%"; 
     }
     else{
         outputBox.innerText="no gain no pain";

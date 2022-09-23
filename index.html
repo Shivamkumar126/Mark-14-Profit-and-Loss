@@ -4,32 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mark-14</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+
+         body{
+            font-family: 'Open Sans', sans-ser;
+            background-color: rgb(122, 33, 33);
+            color: white;
+            
+        } 
+        #container{
+            text-align: center;           
+            background-color: rgb(97, 51, 51);
+            border: 0.3rem solid rgba(199, 177, 220, 0.306);
+        }
+        h1{
+            text-align: center;
+        }
         
         #initial-price{
-            display: block;
-            
+            display: block;   
+            margin: auto;
+            margin-bottom: 2rem;            
         }
         #stocks-quantity{
             display: block;
-            
+            margin: auto;
+            margin-bottom: 2rem;
         }
         #current-price{
             display: block;
+            margin: auto;
+            margin-bottom: 2rem;
             
-        }
+        }    
+         
         #submit-btn{
-            margin-top: 1rem;
+            margin-bottom: 2rem;
         }
+        
 
     </style>
 </head>
 <body>
-    <h1>Mark 14 - Stocks</h1>
+    
+    
     <main id="container">
-        <label for="initial-price">Initial Price :
+        <h1>Mark 14 - Stocks</h1>
+        <label for="initial-price">Purchase Price :
+            <div class="pics">
         <input id="initial-price" type="text" placeholder="Enter Initial Price Here"/>
+    </div>
         </label>
 
         <label for="stocks-quantity">Quantity of Stocks :
@@ -42,6 +68,7 @@
         <button id="submit-btn">Tell Me</button>
 
         <div id="output-box"></div>
+    
     </main>
     <script src="index.js"></script>
 </body>
